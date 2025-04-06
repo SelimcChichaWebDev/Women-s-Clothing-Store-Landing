@@ -1,0 +1,18 @@
+@import "./variable.scss";
+@import "./mobileApp.scss";
+
+.__container {
+	max-width: 1720px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main__title {
+	h1 {
+		@apply md:text-[32px] md:max-w-52;
+	}
+}
+
+.__title {
+	@apply font-black text-3xl uppercase text-black relative z-10 mb-10;
+}

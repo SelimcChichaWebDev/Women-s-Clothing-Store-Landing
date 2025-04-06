@@ -1,0 +1,72 @@
+.mobile {
+	&__app {
+		@apply border-[12px] border-[#C2C8DA] rounded-3xl;
+	}
+	&__body {
+		@apply bg-transparent;
+	}
+	&__container {
+		@apply max-w-[350px] mx-auto px-4 py-6;
+	}
+	&__header {
+		@apply flex justify-between items-center mb-4;
+	}
+	&__title {
+		h1 {
+			@apply font-bold text-lg z-10 relative;
+		}
+		img {
+			@apply absolute top-3 right-40 xs:right-36 xxs:right-32 xxsm:right-16;
+		}
+	}
+	&__search {
+		@apply relative my-7;
+		input {
+			@apply bg-[#DDDDDD] text-black  w-full rounded-xl py-2 pl-10 outline-none  placeholder:text-[#6e6f72] placeholder:text-sm placeholder:font-normal bg-opacity-50;
+		}
+		img {
+			@apply absolute top-2.5 left-3 z-10;
+		}
+	}
+	&__btn {
+		@apply flex justify-between gap-x-4;
+		button {
+			@apply text-sm text-opacity-30 rounded-xl py-2 px-4 mb-7 transition-colors bg-[#DDDDDD];
+			&:hover {
+				@apply bg-[#ebd96b] font-bold;
+			}
+		}
+	}
+	&__cards {
+		@apply grid grid-cols-2 gap-5 max-h-[380px] overflow-y-auto;
+		.cards__item {
+			@apply transition-all;
+			img {
+				@apply w-full rounded-2xl mb-4;
+			}
+			h1 {
+				@apply font-bold text-sm;
+			}
+			h2 {
+				@apply font-normal text-[#757575] text-xs;
+			}
+		}
+	}
+	&__menu {
+		@apply bg-transparent z-20 pt-4;
+		ul {
+			@apply flex justify-between items-center;
+		}
+	}
+}
+
+.list__cart {
+	@apply relative;
+	.icon__cart {
+		@apply flex justify-center absolute -top-1 -right-3 w-[14px] h-[14px] rounded-full bg-[#EA1701] z-20  items-center text-white text-xs font-medium py-2 px-3;
+	}
+}
+
+.menu__icons {
+	@apply hover:text-[#EBD96B] transition-colors duration-150;
+}
